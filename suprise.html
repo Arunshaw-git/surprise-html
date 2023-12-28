@@ -5,30 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Surprise</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        #container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Add more styles as needed */
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
     <div id="container">
-        <h1>this is for you</h1>
-        <p>You are the best</p>
-        <!-- Add more content as needed -->
+        <h1>Your Special Message</h1>
+        <p>WHY ARE YOU?!</p>
+        <button onclick="revealMessage()">Click to reveal more!</button>
+        <p id="hiddenMessage" style="display: none;">You are amazing!</p>
     </div>
+
+    <script>
+        function revealMessage() {
+            var hiddenMessage = document.getElementById("hiddenMessage");
+            hiddenMessage.style.display = "block";
+        }
+    </script>
 </body>
 </html>
